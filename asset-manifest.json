@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio-web/static/css/main.2a4e79d5.css",
+    "main.js": "/portfolio-web/static/js/main.1f970341.js",
+    "static/js/787.a8a21f2e.chunk.js": "/portfolio-web/static/js/787.a8a21f2e.chunk.js",
+    "static/media/Suntech.png": "/portfolio-web/static/media/Suntech.0b575b316fe37afb5a60.png",
+    "static/media/ECAPACITY Project.jpeg": "/portfolio-web/static/media/ECAPACITY Project.3feaa3d7a32aa48fd52f.jpeg",
+    "static/media/profile picture.png": "/portfolio-web/static/media/profile picture.da1e18729ed742728660.png",
+    "static/media/DMS Project.jpeg": "/portfolio-web/static/media/DMS Project.5d650b9e14d68465efa0.jpeg",
+    "static/media/Shimano.png": "/portfolio-web/static/media/Shimano.12db1e6bf91c0843a61f.png",
+    "index.html": "/portfolio-web/index.html",
+    "main.2a4e79d5.css.map": "/portfolio-web/static/css/main.2a4e79d5.css.map",
+    "main.1f970341.js.map": "/portfolio-web/static/js/main.1f970341.js.map",
+    "787.a8a21f2e.chunk.js.map": "/portfolio-web/static/js/787.a8a21f2e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a4e79d5.css",
+    "static/js/main.1f970341.js"
+  ]
+}
