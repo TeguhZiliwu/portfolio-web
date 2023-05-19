@@ -61,7 +61,7 @@ const Footer = () => {
                             <FaGithub />
                         </a>
                     </div>
-                    <p className="font-medium text-xs text-slate-500 text-center">Dibuat dengan <span className="text-pink-500">❤</span> oleh <a href="https://www.instagram.com/teguh.ziliwu" target="_blank" className="font-bold text-primary">Teguh Ziliwu</a>, menggunakan React & <a href="https://tailwindcss.com" target="_blank" className="font-bold text-sky-500">Tailwind</a>.</p>
+                    <p className="font-medium text-xs text-slate-500 text-center">Dibuat dengan <span className="text-pink-500">❤</span> oleh <a href="https://www.instagram.com/teguh.ziliwu" target="_blank" className="font-bold text-primary">Teguh Ziliwu</a>, menggunakan <a href="https://react.dev/" target="_blank" className="text-[#61DAFB]">ReactJS</a> & <a href="https://tailwindcss.com" target="_blank" className="font-bold text-sky-500">Tailwind</a>.</p>
                 </div>
             </div>
         </footer>
