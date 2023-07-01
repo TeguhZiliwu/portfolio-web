@@ -4,7 +4,7 @@ import SuntechLogo from '../assets/img/clients/Suntech.png';
 
 const Client = () => {
     return (
-        <section id="clients" className="pt-36 pb-32 bg-slate-800">
+        <section id="client" className="pt-36 pb-32 bg-slate-800">
             <div className="container">
                 <div className="w-ful px-4">
                     <div className="mx-auto text-center mb-16">

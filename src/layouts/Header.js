@@ -16,6 +16,8 @@ const Header = () => {
     };
 
     const [isShrunk, setShrunk] = useState(false);
+    const [isActiveMenu, setActiveMenu] = useState('Home');
+
     useEffect(() => {
         const onScroll = () => {
             setShrunk((isShrunk) => {
@@ -35,6 +37,10 @@ const Header = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
+    const menuOnclick = (menuName) => {
+        setActiveMenu(menuName);
+    }
+
     return (
         <header className={`bg-transparent absolute top-0 left-0 w-full flex items-center z-10 ${isShrunk ? 'navbar-fixed' : ''}`}>
             <div className="container">
@@ -53,7 +59,7 @@ const Header = () => {
                             <ul className="block lg:flex">
                                 {MenuItems.map((item, index) => (
                                     <li key={index} className="group">
-                                        <a href={item.link} className="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary w-full">{item.name}</a>
+                                        <a href={item.link} className={`text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary w-full ${isActiveMenu === item.name ? `active` : ``}`} onClick={() => menuOnclick(item.name)}>{item.name}</a>
                                     </li>
                                 ))}
                             </ul>

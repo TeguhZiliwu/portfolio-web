@@ -7,11 +7,11 @@ const Hero = () => {
             <div className="container">
                 <div className="flex flex-wrap">
                     <div className="w-full self-center px-4 lg:w-1/2">
-                        <h1 className="text-base font-semibold text-primary md:text-xl">Hallo semua 👋, saya <span className="block font-bold text-4xl mt-1 text-dark lg:text-5xl"> Teguh Ziliwu</span></h1>
-                        <h2 className="font-medium text-secondary text-lg mb-5 lg:text-2xl">Human & <span className="text-dark">Programmer</span>
+                        <h1 className="text-base font-semibold text-primary md:text-xl">Hi 👋, I'm <span className="block font-bold text-4xl mt-1 text-dark lg:text-5xl"> Teguh Ziliwu</span></h1>
+                        <h2 className="font-medium text-secondary text-lg mb-5 lg:text-2xl">Human & <span className="text-dark">Software Engineer</span>
                         </h2>
-                        <p className="font-medium text-secondary mb-10 leading-relaxed">Web programming itu mudah dan menyenangkan, bukan? <span className="text-dark font-semibold">Bukan!</span></p>
-                        <a href="contact" className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+                        <p className="font-medium text-secondary mb-10 leading-relaxed">Programming is easy and fun, right? <span className="text-dark font-semibold">Of course not!</span></p>
+                        <a href="contact" className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-70 transition duration-300 ease-in-out">Contact Me</a>
                     </div>
                     <div className="w-full self-end px-4 lg:w-1/2">
                         <div className="relative mt-10 lg:mt-9 lg:right-0">
