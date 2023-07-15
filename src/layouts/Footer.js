@@ -51,17 +51,17 @@ const Footer = () => {
                 </div>
                 <div className="w-full pt-10 border-t border-slate-700">
                     <div className="flex items-center justify-center mb-5">
-                        <a href="https://www.linkedin.com/in/teguh-ziliwu" target="_blank" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/teguh-ziliwu" target="_blank" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white" rel="noopener noreferrer" aria-label="Linkedin">
                             <FaLinkedin />
                         </a>
-                        <a href="https://www.instagram.com/teguh.ziliwu" target="_blank" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/teguh.ziliwu" target="_blank" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white" rel="noopener noreferrer" aria-label="Instagram">
                             <FaInstagram />
                         </a>
-                        <a href="www.linkedin.com/in/teguh-ziliwu" target="_blank" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <a href="www.linkedin.com/in/teguh-ziliwu" target="_blank" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white" aria-label="GitHub">
                             <FaGithub />
                         </a>
                     </div>
-                    <p className="font-medium text-xs text-slate-500 text-center">Dibuat dengan <span className="text-pink-500">❤</span> oleh <a href="https://www.instagram.com/teguh.ziliwu" target="_blank" className="font-bold text-primary">Teguh Ziliwu</a>, menggunakan <a href="https://react.dev/" target="_blank" className="text-[#61DAFB]">ReactJS</a> & <a href="https://tailwindcss.com" target="_blank" className="font-bold text-sky-500">Tailwind</a>.</p>
+                    <p className="font-medium text-xs text-slate-500 text-center">Dibuat dengan <span className="text-pink-500">❤</span> oleh <a href="https://www.instagram.com/teguh.ziliwu" target="_blank" className="font-bold text-primary" rel="noreferrer noopener">Teguh Ziliwu</a>, menggunakan <a href="https://react.dev/" target="_blank" className="text-[#61DAFB]" rel="noreferrer noopener">ReactJS</a> & <a href="https://tailwindcss.com" target="_blank" className="font-bold text-sky-500" rel="noreferrer noopener">Tailwind</a>.</p>
                 </div>
             </div>
         </footer>

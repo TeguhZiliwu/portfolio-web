@@ -1,11 +1,11 @@
 import { React, useState, useEffect } from 'react';
 
 const MenuItems = [
-    { name: 'Home', link: '#home' },
-    { name: 'About', link: '#about' },
-    { name: 'Portfolio', link: '#portfolio' },
-    { name: 'Clients', link: '#client' },
-    { name: 'Contact', link: '#contact' }
+    { name: 'Home', link: 'home' },
+    { name: 'About', link: 'about' },
+    { name: 'Portfolio', link: 'portfolio' },
+    { name: 'Clients', link: 'client' },
+    { name: 'Contact', link: 'contact' }
 ];
 
 const Header = () => {
@@ -31,6 +31,24 @@ const Header = () => {
 
                 return isShrunk;
             });
+            
+            // Determine which section is currently in the viewport
+            const activeSection = MenuItems.find(tab => {
+              const targetElement = document.getElementById(tab.link);
+              if (targetElement) {
+                let top = window.scrollY;
+                let offset = targetElement.offsetTop - 90;
+                let height = targetElement.offsetHeight;
+                console.log(`${top} >= ${offset} && ${top} < ${offset} + ${height}`)
+                return top >= offset && top < offset + height;
+              }
+              return false;
+            });
+      
+            // Update the active tab based on the active section
+            if (activeSection) {
+                setActiveMenu(activeSection.name);
+            }
         };
 
         window.addEventListener("scroll", onScroll);
@@ -59,7 +77,7 @@ const Header = () => {
                             <ul className="block lg:flex">
                                 {MenuItems.map((item, index) => (
                                     <li key={index} className="group">
-                                        <a href={item.link} className={`text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary w-full ${isActiveMenu === item.name ? `active` : ``}`} onClick={() => menuOnclick(item.name)}>{item.name}</a>
+                                        <a href={`#${item.link}`} className={`text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary w-full ${isActiveMenu === item.name ? `active` : ``}`} onClick={() => menuOnclick(item.name)}>{item.name}</a>
                                     </li>
                                 ))}
                             </ul>
